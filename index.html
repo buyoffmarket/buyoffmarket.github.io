@@ -1,0 +1,329 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Where do you want to call home?</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- Facebook OpenGraph Meta Tags -->
+    <meta property="og:url" content="http://www.getnoticed.io"/>
+    <meta property="og:title" content="Your Professional Development Taken Care Of"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://www.getnoticed.io/images/og.jpg"/>           
+    <meta property="og:description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best."/>        
+    <meta property="fb:app_id" content="1950156078548189"/> 
+
+    <!-- Twitter Cards Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@getnoticedio">
+    <meta name="twitter:title" content="Your Professional Development Taken Care Of">
+    <meta name="twitter:description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best.">
+    <meta name="twitter:image" content="http://www.getnoticed.io/images/og.jpg">
+    <!-- SEGMENT -->
+    
+    <!-- Hotjar Tracking Code for www.getnoticed.io -->
+
+</head>
+<body>
+	<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="/"><img src="/images/LogoWhite.png" alt="getNoticed"></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#features">Features</a></li>
+                       
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div><!-- header content -->
+        </header><!-- header -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                    <h1>Find a property that is not yet on the market</h1>
+                    <p class="tagline">Where do you want to call home?</p>
+                    <form action="#" id="find-home" class="location-search">
+                        <div class="pac-card" id="pac-card">
+
+                          <div id="pac-container">
+                            <input id="pac-input" type="text"
+                                placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
+                          </div>
+                        </div>
+                    
+                        <script>
+                          function initMap() {
+                              console.log('1');
+                            var card = document.getElementById('pac-card');
+                            var input = document.getElementById('pac-input');
+                            var options = {
+                              componentRestrictions: {country: "ca"}
+                             };
+                            var autocomplete = new google.maps.places.Autocomplete(input, options);
+                            autocomplete.addListener('place_changed', function() {
+                                console.log('2');
+                              var place = autocomplete.getPlace();
+                              if (!place.geometry) {
+                                window.alert("No details available for input: '" + place.name + "'");
+                                return;
+                              }
+                              var address = '';
+                              if (place.address_components) {
+                                address = [
+                                  (place.address_components[0] && place.address_components[0].short_name || ''),
+                                  (place.address_components[1] && place.address_components[1].short_name || ''),
+                                  (place.address_components[2] && place.address_components[2].short_name || '')
+                                ].join(' ');
+                              }
+                            });
+                          }
+                        </script>
+                        
+                    </form>
+                    <br/><br/>
+                        <a href="#how-it-works" class="learn-more-link scrollTo trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Hero">Learn More</a>
+                </div><!-- banner text -->
+            </div>
+        </div>
+    </section><!-- banner -->
+    
+    <section id="how-it-works" class="how-it-works section">
+        <div class="container">
+            <h2 class="text-center">How It Works</h2>
+            <div class="row">
+                <div class="col-md-2 col-sm-12 text-right col-md-offset-2 text-sm-center">
+                    <img src="/images/icons/search.png" alt="Search for a property"/>
+                    
+                </div>
+                <div class="col-md-6 col-sm-12 text-sm-center ">
+                    <h3>Search for a property</h3>
+                    <p>Tell us where you want to buy a house, the minimum number of bathrooms, bedrooms and your maximum budget.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-12 text-right col-md-offset-2 text-sm-center">
+                    <img src="/images/icons/star.png" alt="Get matched with home owners"/>
+                </div>
+                <div class="col-md-6 col-sm-12 text-sm-center">
+                    <h3>Get matched with home owners</h3>
+                    <p>We’ll match you with home owners who have not put their property on the market but would be willing to sell.</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-12 text-right col-md-offset-2 text-sm-center">
+                    <img src="/images/icons/send.png" alt="Show your interest"/>
+                    
+                </div>
+                <div class="col-md-6 col-sm-12 text-sm-center">
+                    <h3>Show your interest</h3>
+                    <p>We’ll reach out to the home owner and let them know you are interested in their property.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-2 col-sm-12 text-right col-md-offset-2 text-sm-center">
+                    <img src="/images/icons/home.png" alt="Make the deal"/>
+                    
+                </div>
+                <div class="col-md-6 col-sm-12 text-sm-center">
+                    <h3>Make the deal</h3>
+                    <p>If they like your offer, we’ll connect you and you take it from there. We can put you in touch with local partnered Real Estate professionals, legal services and mortgage providers for any support you need.</p>
+                </div>
+            </div>
+           <div class="text-center"><a href="#pricing" class="btn btn-large scrollTo trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="How it works">Find A Home</a></div>
+        </div>
+    </section><!-- how it works -->
+    
+    
+    
+    <section id="home-owner" class="home-owner section">
+        <div class="container">
+            <h2 class="text-center">Is There Demand For Your Home?</h2>
+            <p class="tagline text-center">Find out how many people are looking for homes in your area and how much they’re willing to pay.</p><br/><br/>
+            
+            <div class="text-center">
+                <a href="#" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Home Owner Section" id="home-owner-learn-more">Learn More</a>
+            </div>
+        </div>
+    </section><!-- features -->
+    
+    <section id="find-a-home" class="find-a-home section">
+        <div class="container">
+            <h2 class="text-center">Find A Home</h2>
+            <form action="#" id="find-home-2" class="location-search">
+                <div class="pac-card" id="pac-card-2">
+
+                  <div id="pac-container-2">
+                    <input id="pac-input-2" type="text"
+                        placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
+                  </div>
+                </div>
+                <script>
+                  function initMap() {
+
+                    var card = document.getElementById('pac-card-2');
+                    var input = document.getElementById('pac-input-2');
+                    var options = {
+                      componentRestrictions: {country: "ca"}
+                     };
+                    var autocomplete = new google.maps.places.Autocomplete(input, options);
+                    autocomplete.addListener('place_changed', function() {
+                      var place = autocomplete.getPlace();
+                      if (!place.geometry) {
+                        // User entered the name of a Place that was not suggested and
+                        // pressed the Enter key, or the Place Details request failed.
+                        window.alert("No details available for input: '" + place.name + "'");
+                        return;
+                      }
+                      var address = '';
+                      if (place.address_components) {
+                        address = [
+                          (place.address_components[0] && place.address_components[0].short_name || ''),
+                          (place.address_components[1] && place.address_components[1].short_name || ''),
+                          (place.address_components[2] && place.address_components[2].short_name || '')
+                        ].join(' ');
+                      }
+
+                    });
+                  }
+                </script>
+                
+            </form>
+           
+        </div>
+    </section><!-- how it works -->
+
+   
+
+
+    <footer class="footer">
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-md-12">
+                    <p>Copyright © 2017 MStance. All Rights Reserved<br>A project by <a href="http://www.mstance.com/">MStance</a></p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer -->
+    
+    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-searcher">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" data-drip-attribute="headline">You're Early!</h3>
+          </div>
+          <div class="modal-body">
+            <form action="https://www.getdrip.com/forms/94800993/submissions" method="post" data-drip-embedded-form="94800993" id="dripForm">
+              <div data-drip-attribute="description">We’re just getting started, and are well on our way to building a list of homes people are potentially looking to sell. Sign up to be notified when properties are available, and let people know you are looking for a house in their area.</div>
+                <div class="form-fields">
+                    <input type="email" name="fields[email]" value="" placeholder="Email" required="required" id="emailInput"/>
+                </div>
+              <div class="text-center">
+                <input type="submit" name="submit" value="Keep me updated
+" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Searcher"/>
+                  
+              </div>
+            </form>
+          </div>
+          
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+   
+    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-owner">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" data-drip-attribute="headline">You're Early!</h3>
+          </div>
+          <div class="modal-body">
+            <form action="https://www.getdrip.com/forms/94800993/submissions" method="post" data-drip-embedded-form="94800993" id="dripForm" class="location-search">
+              <div data-drip-attribute="description">We’re just getting started, and people are potentially looking to buy, sign up to be notified when buyers express interest in your area, and find out how much they’re willing to pay for your home.</div>
+                <div class="form-fields">
+
+                        <div class="pac-card" id="pac-card-3">
+
+                          <div id="pac-container-3">
+                            <input id="pac-input-3" type="text"
+                                placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
+                          </div>
+                        </div>
+                        <script>
+                          function initMap() {
+
+                            var card = document.getElementById('pac-card-3');
+                            var input = document.getElementById('pac-input-3');
+                            var options = {
+                              componentRestrictions: {country: "ca"}
+                             };
+                            var autocomplete = new google.maps.places.Autocomplete(input, options);
+                            autocomplete.addListener('place_changed', function() {
+                              var place = autocomplete.getPlace();
+                              if (!place.geometry) {
+                                // User entered the name of a Place that was not suggested and
+                                // pressed the Enter key, or the Place Details request failed.
+                                window.alert("No details available for input: '" + place.name + "'");
+                                return;
+                              }
+                              var address = '';
+                              if (place.address_components) {
+                                address = [
+                                  (place.address_components[0] && place.address_components[0].short_name || ''),
+                                  (place.address_components[1] && place.address_components[1].short_name || ''),
+                                  (place.address_components[2] && place.address_components[2].short_name || '')
+                                ].join(' ');
+                              }
+
+                            });
+                          }
+                        </script>
+
+                    <input type="email" name="fields[email]" value="" placeholder="Email" required="required" id="emailInput"/>
+                </div>
+              <div class="text-center">
+                <input type="submit" name="submit" value="Keep me updated
+" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Searcher"/>
+                  
+              </div>
+            </form>
+          </div>
+          
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/retina.min.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz5ORQqdGlyxTuDhBKq5Srlx42YIBxYOc&libraries=places&callback=initMap"
+        async defer></script>
+    
+</body>
+</html>
