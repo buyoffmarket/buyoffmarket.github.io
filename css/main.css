@@ -312,12 +312,17 @@ ul li {
 .banner {
   background-image: url(../images/banner.jpg);
   background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 500%;
-  animation: panning 200s infinite linear; }
-  @media (min-width: 1024px) {
-    .banner {
-      background-size: 200%; } }
+  background-repeat: no-repeat; }
+  .banner.home-owner-page {
+    background-image: url(../images/home.jpg);
+    background-position: center center;
+    background-size: cover; }
+  .banner.home-buyer-page {
+    background-size: 500%;
+    animation: panning 200s infinite linear; }
+    @media (min-width: 1024px) {
+      .banner.home-buyer-page {
+        background-size: 200%; } }
   @media (max-width: 1024px) {
     .banner {
       padding-bottom: 30px; } }
@@ -380,7 +385,7 @@ ul li {
 /* ==========================================================================
 	$Home Owners
 ========================================================================== */
-.home-owner {
+.home-owner, .home-buyer {
   background-image: url(../images/home.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -388,22 +393,26 @@ ul li {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover; }
+  .home-owner:not(.home-owner), .home-buyer:not(.home-owner) {
+    background-image: url(../images/banner.jpg);
+    background-position: center top;
+    background-repeat: no-repeat; }
   @media (min-width: 1024px) {
-    .home-owner {
+    .home-owner, .home-buyer {
       min-height: 450px; } }
-  .home-owner .tagline {
+  .home-owner .tagline, .home-buyer .tagline {
     margin: 30px 0;
     font-weight: 500;
     color: #ffffff; }
     @media (min-width: 1024px) {
-      .home-owner .tagline {
+      .home-owner .tagline, .home-buyer .tagline {
         line-height: 1.5;
         font-size: 30px;
         margin-bottom: 80px; } }
-    .home-owner .tagline i {
+    .home-owner .tagline i, .home-buyer .tagline i {
       padding: 0 10px;
       color: #2EC4B6; }
-  .home-owner h2 {
+  .home-owner h2, .home-buyer h2 {
     color: #ffffff;
     font-family: "Lato", sans-serif;
     font-weight: 700;
