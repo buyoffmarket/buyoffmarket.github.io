@@ -70,12 +70,12 @@
     padding-top: 35%; } }
 @media screen and (max-width: 480px) {
   .banner-text {
-    padding-top: 45%; }
+    padding-top: 35%; }
     .banner-text h1 {
-      font-size: 32px; } }
+      font-size: 28px; } }
 @media screen and (max-width: 320px) {
   .banner-text {
-    padding-top: 55%; }
+    padding-top: 35%; }
 
   .testimonials blockquote {
     padding: 20px 5% 0; }
