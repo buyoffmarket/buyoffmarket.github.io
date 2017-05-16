@@ -74,13 +74,7 @@ $(document).ready(function() {
 
         }
     });
-    $('form.location-search').on('submit', function(event){
-        $('.form-error').remove();
-        if ($(this).find('.location-input').val().trim()=="") {
-            $('<div class="form-error"><span>Enter a city, town, address or intersection</span></div>').insertAfter($(this));
-            return false;
-        }
-    });
+
     if($('.scrollTo').length>0){
         
         $('.scrollTo').on('click', function(ev){
@@ -89,6 +83,7 @@ $(document).ready(function() {
             $("html, body").animate({ scrollTop: $(goTo).offset().top });
         });
     }
+    
     
     //Button Tracker
     
@@ -108,7 +103,14 @@ $(document).ready(function() {
             });
         });
     }
-    
+    $(document).on('click','.pre-reg-cta', function(){
+        var modal = $($(this).attr('data-target'));
+        var enteredLocation = $(this).prev('.location-input').val();
+        if(enteredLocation!==undefined){
+            modal.find('.location-input').val(enteredLocation);
+        }
+        
+    });
     $('.plan-cta a').on('click', function(){
         var plan = $(this).attr('data-event-label');
         $('#earlyModal input[type="submit"]').attr('data-event-label', plan);

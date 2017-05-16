@@ -627,21 +627,32 @@ ul li {
   text-align: center;
   margin-right: 10px; }
 
-input[type='text'] {
-  font-size: 20px;
+input[type='text'], input[type='email'] {
   padding: 10px;
-  border: none;
-  border-radius: 0;
-  opacity: 0.9; }
+  border-radius: 0; }
+  input[type='text']#pac-input, input[type='email']#pac-input {
+    border: none;
+    opacity: 0.9;
+    font-size: 20px; }
+  input[type='text']#pac-input-2, input[type='email']#pac-input-2 {
+    font-size: 20px; }
 
-#pac-input, #pac-input-2 {
+.modal input[type='text'], .modal input[type='email'] {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0; }
+
+.location-input {
   width: 90%;
   max-width: 400px;
   vertical-align: bottom; }
 
+.pac-container {
+  z-index: 100000; }
+
 @font-face {
   font-family: "elegant-theme-line";
-  src: url('../fonts/elegant-theme-line.ttf?1494201187') format('truetype'), url('../fonts/elegant-theme-line.eot?1494201187') format('embedded-opentype'), url('../fonts/elegant-theme-line.svg?1494201187') format('svg'), url('../fonts/elegant-theme-line.woff?1494201187') format('woff'); }
+  src: url('../fonts/elegant-theme-line.ttf?1494612146') format('truetype'), url('../fonts/elegant-theme-line.eot?1494612146') format('embedded-opentype'), url('../fonts/elegant-theme-line.svg?1494612146') format('svg'), url('../fonts/elegant-theme-line.woff?1494612146') format('woff'); }
 .icon {
   font-family: 'elegant-theme-line';
   speak: none;

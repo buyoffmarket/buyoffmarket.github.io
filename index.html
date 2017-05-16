@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best.">
+    <meta name="description" content="Find a property that is not yet on the market. With buyoffmarket, let us help you find a house you want to call home.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Where do you want to call home?</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -20,19 +20,19 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
         <!-- Facebook OpenGraph Meta Tags -->
-    <meta property="og:url" content="http://www.getnoticed.io"/>
-    <meta property="og:title" content="Your Professional Development Taken Care Of"/>
+    <meta property="og:url" content="http://www.buyoffmarket.co"/>
+    <meta property="og:title" content="Find a property that is not yet on the market"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://www.getnoticed.io/images/og.jpg"/>           
-    <meta property="og:description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best."/>        
-    <meta property="fb:app_id" content="1950156078548189"/> 
+    <meta property="og:image" content="http://www.buyoffmarket.co/images/og.jpg"/>           
+    <meta property="og:description" content="Find a property that is not yet on the market. With buyoffmarket, let us help you find a house you want to call home."/>        
+    <meta property="fb:app_id" content=""/> 
 
     <!-- Twitter Cards Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@getnoticedio">
-    <meta name="twitter:title" content="Your Professional Development Taken Care Of">
-    <meta name="twitter:description" content="Helping busy people with their professional development and find opportunities to get noticed! With getNoticed, let us help you grow so you can focus on what you do best.">
-    <meta name="twitter:image" content="http://www.getnoticed.io/images/og.jpg">
+    <meta name="twitter:creator" content="@buyoffmarket">
+    <meta name="twitter:title" content="Find a property that is not yet on the market">
+    <meta name="twitter:description" content="Find a property that is not yet on the market. With buyoffmarket, let us help you find a house you want to call home.">
+    <meta name="twitter:image" content="http://www.buyoffmarket.co/images/og.jpg">
     <!-- SEGMENT -->
     <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
@@ -46,13 +46,11 @@
 	<section class="banner" role="banner">
         <header id="header">
             <div class="header-content clearfix">
-                <a class="logo" href="/"><img src="/images/LogoWhite.png" alt="getNoticed"></a>
+                <a class="logo" href="/"><img src="/images/LogoWhite.png" alt="buyoffmarket logo"></a>
                 <nav class="navigation" role="navigation">
                     <ul class="primary-nav">
                         <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#features">Features</a></li>
-                       
+                        <li><a href="#home-owner">Home Owners</a></li>
                     </ul>
                 </nav>
                 <a href="#" class="nav-toggle">Menu<span></span></a>
@@ -68,41 +66,17 @@
 
                           <div id="pac-container">
                             <input id="pac-input" type="text"
-                                placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
+                                placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis pre-reg-cta
+" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero" data-toggle="modal" data-target="#earlyModal-buyer" data-type="buyer">Find a home</button>
                           </div>
                         </div>
                     
-                        <script>
-                          function initMap() {
-                              console.log('1');
-                            var card = document.getElementById('pac-card');
-                            var input = document.getElementById('pac-input');
-                            var options = {
-                              componentRestrictions: {country: "ca"}
-                             };
-                            var autocomplete = new google.maps.places.Autocomplete(input, options);
-                            autocomplete.addListener('place_changed', function() {
-                                console.log('2');
-                              var place = autocomplete.getPlace();
-                              if (!place.geometry) {
-                                window.alert("No details available for input: '" + place.name + "'");
-                                return;
-                              }
-                              var address = '';
-                              if (place.address_components) {
-                                address = [
-                                  (place.address_components[0] && place.address_components[0].short_name || ''),
-                                  (place.address_components[1] && place.address_components[1].short_name || ''),
-                                  (place.address_components[2] && place.address_components[2].short_name || '')
-                                ].join(' ');
-                              }
-                            });
-                          }
-                        </script>
+                       
                         
                     </form>
                     <br/><br/>
-                        <a href="#how-it-works" class="learn-more-link scrollTo trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Hero">Learn More</a>
+                        <a href="#how-it-works" class="learn-more-link scrollTo trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Hero" >Learn More</a>
+                    
                 </div><!-- banner text -->
             </div>
         </div>
@@ -154,7 +128,7 @@
                     <p>If they like your offer, we’ll connect you and you take it from there. We can put you in touch with local partnered Real Estate professionals, legal services and mortgage providers for any support you need.</p>
                 </div>
             </div>
-           <div class="text-center"><a href="#pricing" class="btn btn-large scrollTo trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="How it works">Find A Home</a></div>
+           <div class="text-center"><a href="#pricing" class="btn btn-large trackThis pre-reg-cta" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="How it works" data-toggle="modal" data-target="#earlyModal-buyer" data-type="buyer">Find A Home</a></div>
         </div>
     </section><!-- how it works -->
     
@@ -166,7 +140,7 @@
             <p class="tagline text-center">Find out how many people are looking for homes in your area and how much they’re willing to pay.</p><br/><br/>
             
             <div class="text-center">
-                <a href="#" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Home Owner Section" id="home-owner-learn-more">Learn More</a>
+                <a href="#" class="btn btn-large trackThis pre-reg-cta" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Home Owner Section" id="home-owner-learn-more"  data-toggle="modal" data-target="#earlyModal-seller"  data-type="seller">Learn More</a>
             </div>
         </div>
     </section><!-- features -->
@@ -178,39 +152,12 @@
                 <div class="pac-card" id="pac-card-2">
 
                   <div id="pac-container-2">
-                    <input id="pac-input-2" type="text"
-                        placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
+                      <input id="pac-input-2" type="text"
+                        placeholder="Enter a town, city intersection or address" class="location-input"> 
+                      <button type="submit" class="btn btn-large trackThis pre-reg-cta" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero"  data-toggle="modal" data-target="#earlyModal-buyer" data-type="buyer">Find a home</button>
                   </div>
                 </div>
-                <script>
-                  function initMap() {
-
-                    var card = document.getElementById('pac-card-2');
-                    var input = document.getElementById('pac-input-2');
-                    var options = {
-                      componentRestrictions: {country: "ca"}
-                     };
-                    var autocomplete = new google.maps.places.Autocomplete(input, options);
-                    autocomplete.addListener('place_changed', function() {
-                      var place = autocomplete.getPlace();
-                      if (!place.geometry) {
-                        // User entered the name of a Place that was not suggested and
-                        // pressed the Enter key, or the Place Details request failed.
-                        window.alert("No details available for input: '" + place.name + "'");
-                        return;
-                      }
-                      var address = '';
-                      if (place.address_components) {
-                        address = [
-                          (place.address_components[0] && place.address_components[0].short_name || ''),
-                          (place.address_components[1] && place.address_components[1].short_name || ''),
-                          (place.address_components[2] && place.address_components[2].short_name || '')
-                        ].join(' ');
-                      }
-
-                    });
-                  }
-                </script>
+                
                 
             </form>
            
@@ -231,7 +178,7 @@
         </div>
     </footer><!-- footer -->
     
-    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-searcher">
+    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-buyer">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -239,16 +186,68 @@
             <h3 class="modal-title" data-drip-attribute="headline">You're Early!</h3>
           </div>
           <div class="modal-body">
-            <form action="https://www.getdrip.com/forms/94800993/submissions" method="post" data-drip-embedded-form="94800993" id="dripForm">
-              <div data-drip-attribute="description">We’re just getting started, and are well on our way to building a list of homes people are potentially looking to sell. Sign up to be notified when properties are available, and let people know you are looking for a house in their area.</div>
-                <div class="form-fields">
+              
+            <form action="https://www.getdrip.com/forms/28848110/submissions" method="post" data-drip-embedded-form="28848110">
+                <div data-drip-attribute="description" class="buyerfield">We're just getting started, and are well on our way to building a list of homes people are potentially looking to sell. Sign up to be notified when properties are available, and let people know you are looking for a house in their area.</div>
+                <div>
                     <input type="email" name="fields[email]" value="" placeholder="Email" required="required" id="emailInput"/>
                 </div>
-              <div class="text-center">
-                <input type="submit" name="submit" value="Keep me updated
-" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Searcher"/>
-                  
-              </div>
+                <div class="buyerfield">
+                    <input type="text" name="fields[buyarea]" value="" placeholder="Where do you want to buy?" class="location-input" id="pac-input-3" required="required" />
+                </div>
+                <div class="row">
+                    <div class="buyerfield col-sm-6">
+                        <input type="text" name="fields[radius]" value="" placeholder="Within how many km?"/>
+                    </div>
+                    <div class="buyerfield col-sm-6">
+                        <input type="text" name="fields[budget]" value="" placeholder="Whats your budget?"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="buyerfield col-sm-6">
+                        <input type="text" name="fields[buybaths]" value="" placeholder="Min Bathrooms?"/>
+                    </div>
+                    <div class="buyerfield col-sm-6">
+                        <input type="text" name="fields[buybeds]" value="" placeholder="Min Bedrooms?"/>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" name="submit" value="Keep Me Updated" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Buyer"/>
+                </div>
+                
+            </form>
+          </div>
+          
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-seller">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" data-drip-attribute="headline">You're Early!</h3>
+          </div>
+          <div class="modal-body">
+              
+            <form action="https://www.getdrip.com/forms/28848110/submissions" method="post" data-drip-embedded-form="28848110">
+                <div data-drip-attribute="description" class="sellerfield">We're just getting started, and people are potentially looking to buy, sign up to be notified when buyers express interest in your area, and find out how much they’re willing to pay for your home.</div>
+                <div>
+                    <input type="email" name="fields[email]" value="" placeholder="Email" required="required" id="emailInput"/>
+                </div>
+                <div class="sellerfield">
+                    <input type="text" name="fields[sellarea]" value="" placeholder="Where is your home located?" class="location-input"  id="pac-input-4" required="required" />
+                </div>
+                <div class="sellerfield">
+                    <input type="text" name="fields[sellbaths]" value="" placeholder="Number of Bathrooms?"/>
+                </div>
+                <div class="sellerfield">
+                    <input type="text" name="fields[sellbeds]" value="" placeholder="Number of Bedrooms?"/>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Keep Me Updated" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Buyer"/>
+                </div>
+                
             </form>
           </div>
           
@@ -256,69 +255,6 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
    
-    <div class="modal fade" tabindex="-1" role="dialog" id="earlyModal-owner">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" data-drip-attribute="headline">You're Early!</h3>
-          </div>
-          <div class="modal-body">
-            <form action="https://www.getdrip.com/forms/94800993/submissions" method="post" data-drip-embedded-form="94800993" id="dripForm" class="location-search">
-              <div data-drip-attribute="description">We’re just getting started, and people are potentially looking to buy, sign up to be notified when buyers express interest in your area, and find out how much they’re willing to pay for your home.</div>
-                <div class="form-fields">
-
-                        <div class="pac-card" id="pac-card-3">
-
-                          <div id="pac-container-3">
-                            <input id="pac-input-3" type="text"
-                                placeholder="Enter a town, city intersection or address" class="location-input"> <button type="submit" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Find Home" data-event-label="Hero">Find a home</button>
-                          </div>
-                        </div>
-                        <script>
-                          function initMap() {
-
-                            var card = document.getElementById('pac-card-3');
-                            var input = document.getElementById('pac-input-3');
-                            var options = {
-                              componentRestrictions: {country: "ca"}
-                             };
-                            var autocomplete = new google.maps.places.Autocomplete(input, options);
-                            autocomplete.addListener('place_changed', function() {
-                              var place = autocomplete.getPlace();
-                              if (!place.geometry) {
-                                // User entered the name of a Place that was not suggested and
-                                // pressed the Enter key, or the Place Details request failed.
-                                window.alert("No details available for input: '" + place.name + "'");
-                                return;
-                              }
-                              var address = '';
-                              if (place.address_components) {
-                                address = [
-                                  (place.address_components[0] && place.address_components[0].short_name || ''),
-                                  (place.address_components[1] && place.address_components[1].short_name || ''),
-                                  (place.address_components[2] && place.address_components[2].short_name || '')
-                                ].join(' ');
-                              }
-
-                            });
-                          }
-                        </script>
-
-                    <input type="email" name="fields[email]" value="" placeholder="Email" required="required" id="emailInput"/>
-                </div>
-              <div class="text-center">
-                <input type="submit" name="submit" value="Keep me updated
-" data-drip-attribute="sign-up-button" class="btn btn-large trackThis" data-event-category="Landing Page" data-event-action="Pre Signup" data-event-label="Searcher"/>
-                  
-              </div>
-            </form>
-          </div>
-          
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
     <script src="/js/bootstrap.min.js"></script>
@@ -326,8 +262,25 @@
     <script src="/js/retina.min.js"></script>
     <script src="/js/modernizr.js"></script>
     <script src="/js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz5ORQqdGlyxTuDhBKq5Srlx42YIBxYOc&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz5ORQqdGlyxTuDhBKq5Srlx42YIBxYOc&libraries=places"
         async defer></script>
+    <script>
+        function initialize() {
+            var options = {
+              componentRestrictions: {country: "ca"}
+             };
+            var acInputs = document.getElementsByClassName("location-input");
+            for (var i = 0; i < acInputs.length; i++) {
+                var autocomplete = new google.maps.places.Autocomplete(acInputs[i], options);
+                autocomplete.inputId = acInputs[i].id;
+            }
+        }
+        setTimeout(
+            initialize,
+            1000
+        )
+        
+    </script>
     
 </body>
 </html>
