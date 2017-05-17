@@ -262,12 +262,9 @@
         async defer></script>
     <script>
         function initialize() {
-            var options = {
-              componentRestrictions: {country: "ca"}
-             };
             var acInputs = document.getElementsByClassName("location-input");
             for (var i = 0; i < acInputs.length; i++) {
-                var autocomplete = new google.maps.places.Autocomplete(acInputs[i], options);
+                var autocomplete = new google.maps.places.Autocomplete(acInputs[i]);
                 autocomplete.inputId = acInputs[i].id;
             }
         }
